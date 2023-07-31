@@ -58,8 +58,8 @@ const Profile = () => {
             <div>
                 <div className="container">
                     <div className="gallery">
-                        {photos.map(profile =>
-                            <div className="gallery-item" tabindex="0">
+                        {photos.map((profile,index) =>
+                            <div className="gallery-item" tabindex="0" key={index}>
                                 <img src={profile.urls.full} className="gallery-image" alt="" />
                                 <div className="gallery-item-info">
                                     <ul>

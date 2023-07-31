@@ -68,7 +68,7 @@ const Header = () => {
           <div className="icon-container">
             <FontAwesomeIcon className="cursor-pointer " icon={faCompass} size="lg" />
           </div>
-          <Image className='custom-rounded-icon' src={ayush} onClick={() => router.push('../../components/')}/>
+          <Image className='custom-rounded-icon' alt="image" src={ayush} onClick={() => router.push('../../components/')}/>
         </div>
       </div>
     </div >

@@ -31,7 +31,7 @@ function Posts() {
 
   useEffect(() => {
     loadData();
-  }, [page]);
+  }, []);
 
   return (
     <div className="posts">
