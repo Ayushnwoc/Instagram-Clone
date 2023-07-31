@@ -1,0 +1,45 @@
+/* Custom CSS for the main container */
+.custom-main-container {
+  background-color: white;
+  display:grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.custom-first-section{
+  justify-content: center; /* Center the grid horizontally */
+  align-items: center; /* Center the grid vertically */
+  grid-column: span 2;
+}
+
+.miniansug{
+  position:fixed;
+  margin-top: 3rem;
+}
+/* Custom CSS for medium screens */
+@media (min-width: 768px) {
+  .custom-main-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Custom CSS for large screens */
+@media (min-width: 1280px) {
+  .custom-main-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 72rem;
+  }
+}
+
+
+/* Custom CSS for the second section on large screens */
+@media (min-width: 1280px) {
+  .custom-second-section {
+    display: inline-grid;
+    grid-column: span 1;
+    position: fixed;
+    top: 5rem;
+  }
+}

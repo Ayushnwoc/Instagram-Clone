@@ -1,0 +1,22 @@
+/* Custom CSS for the container */
+.stories {
+	display: flex;
+	gap: 0.5rem; /* Equivalent to Tailwind class space-x-2 */
+	padding: 2rem 2rem; /* Equivalent to Tailwind class p-6 */
+	background-color: #fff; /* Equivalent to Tailwind class bg-white */
+	margin-top: 2rem; /* Equivalent to Tailwind class mt-8 */
+	/* Equivalent to Tailwind class border-gray-200 */
+	border-radius: 0.25rem; /* Equivalent to Tailwind class rounded-sm */
+	overflow-x: scroll; /* Equivalent to Tailwind class overflow-x-scroll */
+	/* Custom scrollbar styles */
+	scrollbar-width: thin;
+	scrollbar-color: #000 #f9fafb; /* Equivalent to Tailwind class scrollbar-thumb-black */
+}
+
+/* Custom CSS for the scrollbar thumb */
+.stories::-webkit-scrollbar-thumb {
+	background-color: #000; /* Equivalent to Tailwind class scrollbar-thumb-black */
+}
+
+/* Custom CSS for the content inside the container (if needed) */
+/* Add any styles here if you want to customize the content inside the container */

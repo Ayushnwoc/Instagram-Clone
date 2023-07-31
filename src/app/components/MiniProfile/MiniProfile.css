@@ -1,0 +1,54 @@
+/* Custom CSS for the Mini Profile component */
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 14px;
+	margin-left: 10px;
+}
+
+/* Profile picture */
+.profilePic{
+	height: 3rem;
+	width: 3rem;
+	border-radius: 9999px;
+	/* Add your border styles here */
+	border: 2px solid #ccc;
+	padding: 2px;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+
+/* User details */
+/* Font styles */
+.font-bold {
+	font-weight: bold;
+	font-size: medium;
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
+.text-sm {
+	font-size: 0.875rem;
+	margin-left: 1rem;
+}
+
+/* Text color */
+.text-gray-400 {
+	color: #9ca3af;
+}
+.startEnd{
+	display: flex;
+	justify-content: space-between;
+}
+.signOut{
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	color: #3b82f6;
+	color: #2563eb;
+	font-size: 0.875rem;
+	font-weight: 600;
+	margin-left: 3rem;
+}

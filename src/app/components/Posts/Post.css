@@ -1,0 +1,148 @@
+/* Custom CSS for Instagram-like card */
+.card {
+    background-color: white;
+    /* border: 1px solid #dbdbdb; */
+    border-radius: 0;
+    margin-top: -0.1rem;
+    max-width: 400px;
+  }
+  
+  .paperAirplane {
+    rotate: 50deg;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 0rem;
+  }
+ 
+  .hrr{
+    height: 0.2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: grey;
+  }
+  .userDetails {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profilepic {
+    margin-right: 0.75rem;
+  }
+  
+  .profile_img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .userDetails h3 {
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+  
+  .userDetails span {
+    display: block;
+    font-size: 0.75rem;
+    color: #8e8e8e;
+  }
+  
+  .dot {
+    cursor: pointer;
+    /* margin-right: 1rem; */
+  }
+  
+  .imgBx img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .actionBtns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  .heart svg,
+  ._8-yf5 svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .left span {
+    margin-right: 0.5rem;
+  }
+  
+  .likes {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    /* padding-left: 1.25rem; */
+  }
+  .des{
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .message b {
+    font-size: 0.875rem;
+  }
+  
+  .comments {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #8e8e8e;
+    margin-bottom: 0.625rem;
+    /* padding-left: 1.25rem; */
+  }
+  
+  .btn{
+    cursor: pointer;
+  }
+  .postTime {
+    font-size: 0.75rem;
+    color: #8e8e8e;
+    padding-left: 1.25rem;
+  }
+  
+  .addComments {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+  }
+  
+  .reaction {
+    cursor: pointer;
+  }
+  
+  .reaction h3 {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .text {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.625rem 0.75rem;
+  }
+  
+  .addComments a {
+    color: #0095f6;
+    font-weight: bold;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  

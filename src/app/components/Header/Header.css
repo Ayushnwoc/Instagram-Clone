@@ -1,0 +1,161 @@
+.headerContainer {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	border-bottom: 1px solid #e5e7eb;
+	background-color: rgb(254, 254, 254);
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+}
+
+/* Styles for the logo container */
+.flex-container {
+	display: flex;
+  	justify-content: space-between;
+	max-width: 70rem; /* Equivalent to Tailwind class max-w-6xl */
+	/* margin-left: 1.25rem; Equivalent to Tailwind class mx-5 */
+	/* margin-right: 1.25rem; Equivalent to Tailwind class mx-5 */
+	padding: 0.4rem 0.8rem; 
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dot {
+  position: absolute;
+  bottom: -0.2rem; /* Adjust the positioning to fit your design */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f56565; /* Replace with your desired dot color */
+  border-radius: 50%;
+  height: 0.25rem; /* Adjust the size as needed */
+  width: 0.25rem; /* Adjust the size as needed */
+}
+
+/* Custom CSS */
+.custom-badge {
+  position: absolute;
+  top: -0.5rem; /* Adjust the positioning to fit your design */
+  right: -0.5rem; /* Adjust the positioning to fit your design */
+  background-color: #f56565; /* Replace with your desired background color */
+  border-radius: 50%;
+  height: 1rem; /* Adjust the size as needed */
+  width: 1rem; /* Adjust the size as needed */
+  color: #fff; /* Replace with your desired text color */
+  font-size: 0.75rem; /* Adjust the font size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Custom CSS */
+.element {
+	position: relative; /* Equivalent to Tailwind class relative */
+	width: 6rem; /* Equivalent to Tailwind class w-24 */
+	height: 2rem; /* Equivalent to Tailwind class h-8 */
+}
+
+/* Custom CSS */
+.custom-container {
+	position: relative;
+	margin-top: 0rem;
+	padding: 0.25rem;
+	padding-left: 0.5rem;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	border-width: 1.2px;
+	border-style: solid;
+	border-color: #d1d5db;
+	display: flex;
+	align-items: center;
+	background-color: #f9fafb;
+}
+
+.custom-search-icon {
+	height: 1.25rem;
+	width: 1.25rem;
+	/* fill: #9ca3af; */
+	margin-right: 0.25rem;
+}
+
+.custom-input {
+	padding-left: 0.25rem;
+	background-color: #f9fafb;
+	display: block;
+	outline: none;
+	border: none;
+}
+
+.custom-plus-icon {
+	height: 1.25rem;
+	width: 1.25rem;
+	fill: #9ca3af;
+	margin-left: 0.25rem;
+	transform: rotate(45deg);
+}
+
+/* Custom CSS */
+.custom-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+/* Custom styles for icons */
+.custom-icon-container > * {
+	height: 1.3rem; /* Set the height as needed for your icons */
+	width: 1.3rem; /* Set the width as needed for your icons */
+	cursor: pointer;
+}
+
+.custom-rounded-icon {
+  width: 2rem; /* Equivalent to Tailwind class w-8 */
+  height: 2rem; /* Equivalent to Tailwind class h-8 */
+  border-radius: 50%; /* Equivalent to Tailwind class rounded-full */
+}
+
+.avatar{
+  align-items: center;
+  height: 1.3rem;
+  cursor: pointer;
+}
+
+/* Media query for lg breakpoint */
+@media (min-width: 1024px) {
+	.element {
+		display: inline-grid; /* Equivalent to Tailwind class lg:inline-grid */
+	}
+}
+
+@media (min-width: 1280px) {
+	.flex-container {
+		margin-left: auto; /* Equivalent to Tailwind class xl:mx-auto */
+		margin-right: auto; /* Equivalent to Tailwind class xl:mx-auto */
+	}
+}
+@media (max-width: 767px) {
+  /* Hide the search bar and icons in mobile mode */
+  .custom-container {
+    display: none;
+  }
+
+  .custom-icon-container{
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  /* Show the "element" and "ayush" image */
+  .element {
+    margin-left: 0;
+    display: inline-grid;
+  }
+
+}
