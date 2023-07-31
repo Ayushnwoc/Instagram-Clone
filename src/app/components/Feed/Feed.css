@@ -38,6 +38,7 @@
   .miniansug{
     position:fixed;
     margin-top: 3rem;
+    display: inline-grid;
   }
   .custom-second-section {
     display: inline-grid;
