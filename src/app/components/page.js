@@ -6,9 +6,9 @@ import Footer from './Footer/Footer'
 export default function Hometo() {
   return (
     <div className={styles.heightscreen}>
-       <Header />
+      <Header />
       <div >
-       <Profile/>
+        <Profile />
       </div>
       <Footer />
     </div>

@@ -22,6 +22,7 @@ To install the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/Ayushnwoc/Instagram-Clone.git`
 2. Change into the project directory: `cd Instagram-Clone`
 3. Install the dependencies: `npm install` or `yarn`
+4. Install the icons: `npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome  @heroicons/react@v1 @fortawesome/free-regular-svg-icons`
 
 ## Getting Started
 To run your Next.js app in development mode, use the following command:

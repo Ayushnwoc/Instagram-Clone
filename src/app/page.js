@@ -7,10 +7,12 @@ import Footer from './components/Footer/Footer'
 export default function Home() {
   return (
     <div className={styles.heightscreen}>
-       <Header />
+      {/* Header component for top Navigation bar */}
+      <Header />
       <div >
-       <Feed/>
+        <Feed />
       </div>
+      {/* Footer component for bottom  */}
       <Footer />
     </div>
   )

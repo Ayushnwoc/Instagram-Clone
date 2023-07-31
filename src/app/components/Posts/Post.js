@@ -10,17 +10,25 @@ import {
     EmojiHappyIcon,
     DotsHorizontalIcon,
 } from '@heroicons/react/outline';
+// custom css import
 import "./Post.css";
 
 
-const Post = ({ username,profileImageUrl , imageUrl, likes,likedByUser, comments ,location , description}) => {
+const Post = ({ username, profileImageUrl, imageUrl, likes, likedByUser, comments, location, description }) => {
+
+    // variables for like and comment
     const [comment, setComment] = useState("");
     const [hasLiked, setHasLiked] = useState(false);
 
     return (
+        
         <div className="card">
+
+            {/* first section of Post which contains user details */}
             <div className="top">
                 <div className="userDetails ">
+
+                    {/* profile pic and username */}
                     <div className="profilepic">
                         <div className="profile_img">
                             <div className="image">
@@ -35,13 +43,17 @@ const Post = ({ username,profileImageUrl , imageUrl, likes,likedByUser, comments
                 </div>
                 <div >
                     <span className="heart">
-                        <DotsHorizontalIcon  className='btn'/>
+                        <DotsHorizontalIcon className='btn' />
                     </span>
                 </div>
             </div>
+
+            {/* second section of Post which contains post image */}
             <div className="imgBx">
                 <img src={imageUrl} alt="post-1" className="cover" />
             </div>
+
+            {/* third section of Post which contains like, comment, share and save buttons */}
             <div className="bottom">
                 <div className="actionBtns">
                     <div className="left">
@@ -73,9 +85,9 @@ const Post = ({ username,profileImageUrl , imageUrl, likes,likedByUser, comments
                     <p className="likes">{likes} likes</p>
                 </div>
                 <div >
-                    <p className='des'><strong>{username}</strong>{" "}{description!=null? description.slice(0,35):""}{description && description.length>35?"...":""}</p>
+                    <p className='des'><strong>{username}</strong>{" "}{description != null ? description.slice(0, 35) : ""}{description && description.length > 35 ? "..." : ""}</p>
                 </div>
-                
+
                 <div className='btn'>
                     <h4 className="comments">View all 32 comments</h4>
                 </div>
@@ -83,6 +95,7 @@ const Post = ({ username,profileImageUrl , imageUrl, likes,likedByUser, comments
                     <h4 className="comments">Add a comment ...</h4>
                 </div>
             </div>
+
             <div className="hrr" ></div>
         </div>
     );

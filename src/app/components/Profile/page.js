@@ -5,15 +5,15 @@ import axios from 'axios';
 import "./Profile.css";
 import { ChatIcon, HeartIcon } from '@heroicons/react/outline';
 import { FaCog } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 
 const Profile = () => {
+
+    // variables for setting reponses
     const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
-        const clientId = 'wM3ynOseuNwAlISTJw9iTRl-jjxJGiv0DjMwINZhwu4';
-        const apiUrl = `https://api.unsplash.com/photos/?page=1&client_id=${clientId}`;
+
+        const apiUrl = `${process.env.API_LINK}?page=1&client_id=${process.env.CLIENT_ID}`;
 
         const fetchData = async () => {
             try {
@@ -26,10 +26,15 @@ const Profile = () => {
 
         fetchData();
     }, []);
-    console.log(photos);
+
+
+    // console.log(photos);
+
     return (
         <div >
             <header>
+
+                {/* container for user personal details */}
                 <div className="container">
                     <div className="profile">
                         <div className="profile-image">
@@ -55,11 +60,12 @@ const Profile = () => {
                 </div>
             </header>
 
+            {/* container for posts of an user */}
             <div>
                 <div className="container">
                     <div className="gallery">
                         {photos.map((profile,index) =>
-                            <div className="gallery-item" tabindex="0" key={index}>
+                            <div className="gallery-item" tabIndex="0" key={index}>
                                 <img src={profile.urls.full} className="gallery-image" alt="" />
                                 <div className="gallery-item-info">
                                     <ul>
@@ -70,7 +76,6 @@ const Profile = () => {
                             </div>
                         )}
                     </div>
-                    {/* <div className="loader"></div> */}
 
                 </div>
 
