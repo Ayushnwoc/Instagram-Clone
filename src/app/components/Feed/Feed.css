@@ -12,7 +12,7 @@
 }
 
 .miniansug{
-  display: hidden;
+  display: none;
 }
 /* Custom CSS for medium screens */
 @media (min-width: 768px) {
