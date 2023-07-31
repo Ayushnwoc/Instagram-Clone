@@ -11,7 +11,7 @@
 9. [Contributing](#contributing)
 
 ## Introduction
-Welcome to the GitHub Documentation for your Next.js app. This documentation aims to provide a comprehensive guide on setting up, developing, and deploying your Next.js application.
+Welcome to the GitHub Documentation for Instagram Clone app. This documentation aims to provide a comprehensive guide on setting up, developing, and deploying application.
 
 ## Installation
 Before getting started with the project, ensure that you have the following prerequisites installed on your machine:
@@ -19,23 +19,21 @@ Before getting started with the project, ensure that you have the following prer
 - npm (Node Package Manager) or yarn
 
 To install the project, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/your-nextjs-app.git`
-2. Change into the project directory: `cd your-nextjs-app`
+1. Clone the repository: `git clone https://github.com/Ayushnwoc/Instagram-Clone.git`
+2. Change into the project directory: `cd Instagram-Clone`
 3. Install the dependencies: `npm install` or `yarn`
 
 ## Getting Started
 To run your Next.js app in development mode, use the following command:
-npm run dev
+`npm run dev`
 
 This will start a local development server and you can access your app at `http://localhost:3000`.
 
 ## Project Structure
 The project structure is organized as follows:
-- `pages/`: Contains all the pages of your app. Each file in this directory corresponds to a route.
-- `components/`: Houses all the reusable components used across the application.
-- `public/`: This folder contains static assets like images, fonts, etc.
-- `styles/`: Contains global styles and CSS modules for components.
-- `utils/`: Includes utility functions and helper modules.
+- `app/`: Contains the homepage of your application.
+- `app/components/`: Contains all the componets with their native css in a folder format.
+- `app/asset`: This folder contains static assets like images, fonts, etc.
 
 ## Configuration
 Your Next.js app may require some configuration to tailor it to your specific needs. Important configuration files include:
