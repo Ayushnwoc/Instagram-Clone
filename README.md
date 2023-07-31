@@ -70,5 +70,5 @@ Contributions to the project are welcome! If you'd like to contribute, please fo
 4. Push the changes to your forked repository: `git push origin feature/your-feature-name`
 5. Create a pull request (PR) to the main repository.
 
-
-
+## Link:
+https://ayush-instagram-clone.netlify.app/
